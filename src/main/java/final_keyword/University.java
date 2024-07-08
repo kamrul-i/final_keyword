@@ -4,9 +4,9 @@ public class University {
     //এখানে ২টি class use করা হয়েছে, main class থেকে এই class-কে call করা হয়েছে।।
 
     final String INSTITUTE_NAME = "Jamia al-safa"; //final variable
-    final int fee; //blank final variable
+    static final double fee; //static blank final variable
 
-    University() {
+    static {
         fee = 8000;
     }
 
@@ -20,9 +20,9 @@ public class University {
                     2. blank final variable
                     3. static blank final variable
     
-        2. blank final variable:
-            যে variable-কে final হিসেবে declare করেও (final variable-এর মতো) তার মধ্যে কোন মান দেওয়া হয় নাই, তাকে blank final variable বলে।।
-            এই রকম variable এর মান constructor এর মাধ্যমে declare করতে হয়।।
+        3. static blank final variable:
+            যে variable-কে final হিসেবে declare করেও (final variable-এর মতো) তার মধ্যে কোন মান দেওয়া হয় নাই তাকে static blank final variable বলে।।
+            এই রকম variable-এর মান "static" block এর মাধ্যমে declare করতে হয়।।
 
      */
 }
